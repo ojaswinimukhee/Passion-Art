@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+body{
+    position: absolute;
+} 
+
+h1 {
+    font-family: Josefin Sans;
+}
+
+/*product block*/
+
+.product {
+    border-style: solid;
+    border-radius: 50px;
+    height: 700px;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: fixed;
+    overflow: auto;
+}
+
+.product::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .product::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+.product h1 {
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product p {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.product img {
+    position: absolute;
+    height: 200px;
+    width:200px;
+    background-size: cover;
+    border-radius: 50px;
+    border-style:solid;
+    border-color: black;
+    margin-left: 90px ;
+}
+
+.product a p {
+    position: absolute;
+    color: rgb(8, 0, 0);
+    font-size: xx-large;
+    transition: 0.5s ease;
+}
+
+.product a p:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+/*post block*/
+.post {
+    border-radius: 50px;
+    height: 700px;
+    width: 1000px;
+    margin-left: 450px;
+    margin-top: 30px;
+    margin-right: 30px;
+    
+}
+
+.post ul {
+    position: absolute;
+    left: 950px;
+    top: 45px;
+    list-style-type: none;
+}
+
+.post ul li {
+    
+  display: flex;
+  float: left;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.post ul li a {
+    
+  font-style: bold;
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  transition: 1s ease;
+}
+
+.post ul li a:hover {
+    color: gold;
+}
+
+.content {
+    border-style: solid;
+    border-radius: 50px;
+    height: 700px;
+    width: 500px;
+    position: fixed;
+    background-image: url(./images/selected.jpg);
+    background-size: cover;
+    backdrop-filter: blur(0px);
+}
+
+.search {
+    margin-top: 10px;
+    margin-left: 60px;
+    background-color: rgb(218, 218, 218);
+    width: 350px;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8PX;
+    padding-left: 5px;
+}
+
+.search input {
+    margin-top: 2PX;
+    border: none;
+    background-color:rgb(248, 246, 246);
+}
+
+.search #searchbox {
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    
+}
+
+.comment {
+    border-style: solid;
+    border-radius: 50px;
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    margin-left: 500px;
+    margin-top: 93px;
+}
+

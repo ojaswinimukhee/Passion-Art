@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Orbit&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.art {
+  position: absolute;
+ /* top: 50px;*/
+  left: 50px;
+  color: rgb(4, 0, 0);
+  font-size: 190px;
+  font-weight: 1000;
+   font-style: bold; 
+  font-family: Moirai One;
+}
+
+.home {
+  width: 100vw;
+}
+
+.home ul {
+  position: absolute;
+  left: 900px;
+  top: 20px;
+  list-style-type: none;
+}
+
+.home ul li {
+  display: flex;
+  float: left;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.home ul li a {
+  font-style: bold;
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  transition: 1s ease;
+}
+
+.home ul li a:hover {
+  color: rgb(252, 39, 223);
+  text-decoration: dotted;
+}
+
+.content {
+  position: absolute;
+  top: 280px;
+  left: 55px;
+  font-size: xxx-large;
+  font-style: normal;
+  color: rgb(220, 10, 10);
+}
+
+.content button {
+  size: 20px;
+  background-color: darkgray;
+  border-color: black;
+  border-radius: 50px;
+  border-style: double;
+  transition: 0.5s ease;
+  width: 100px;
+  height: 30px;
+}
+
+.content button a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.content button a:hover {
+  color: white;
+}
+
+.content button:hover {
+  background-color: black;
+}
+
+.form-container {
+  width: 300px;
+  margin: 270px 1000px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  }
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-container .form-group {
+  margin-bottom: 10px;
+}
+
+.form-container .form-group label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-container .form-group .btn-container {
+  text-align: center;
+}
+
+.form-container .form-group .btn-container button {
+  margin-right: 10px;
+}
+
+.form-container .form-group .form-toggle {
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-container .form-group .form-toggle span {
+  color: blue;
+  text-decoration: underline;
+}
+
+.form-container .form-group .form-toggle span:hover {
+  color: darkblue;
+}
+
+.hide {
+  display: none;
+}

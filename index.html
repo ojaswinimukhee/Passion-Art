@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+    <title>Passion Art</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="icon">
+        <h1 class="art">Passion Art</h1>
+        <div class="home">
+          <ul>
+            <li><a href="./arts.html">Home</a></li>
+            <li><a href="all">Chat</a></li>
+            <li><a href="all">Help</a></li>
+            <li><a href="all">Exit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        Join the people with similar interest <br />
+        Make your passion reach the destination <br />
+        Be a creative Artist..! <br />
+        The place where the colorful minds meet <br />
+        Be awesome for today..... <br />
+        <button><a href="all">Contact Us</a></button>
+      </div>
+
+      <div class="form-container">
+        <h2>User Registration</h2>
+        <form id="signup-form" class="form-group">
+          <label for="signup-name">Name:</label>
+          <input type="text" id="signup-name" required /><br />
+
+          <label for="signup-email">Email:</label>
+          <input type="email" id="signup-email" required /><br />
+
+          <label for="signup-contact">Contact No.:</label>
+          <input type="text" id="signup-contact" required /><br />
+
+          <label for="signup-password">Password:</label>
+          <input type="password" id="signup-password" required /><br />
+
+          <div class="btn-container">
+            <a href="./main.html">
+            <button type="submit">Sign Up</button>
+            </a>
+            <div class="form-toggle">
+              Already have an account? <span id="toggle-login">Log in</span>
+            </div>
+          </div>
+        </form>
+
+        <form id="login-form" class="form-group hide">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" required /><br />
+
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" required /><br />
+
+          <div class="btn-container">
+            <button type="submit">Login</button>
+            
+            <div class="form-toggle">
+              Don't have an account? <span id="toggle-signup">Sign up</span>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <script>
+        //script 1
+        document.addEventListener("DOMContentLoaded", function () {
+          const signupForm = document.getElementById("signup-form");
+          const loginForm = document.getElementById("login-form");
+          const toggleLogin = document.getElementById("toggle-login");
+          const toggleSignup = document.getElementById("toggle-signup");
+          const balanceSection = document.getElementById("balance");
+          const balanceInfo = document.getElementById("balance-info");
+          const logoutButton = document.getElementById("logout-button");
+          // Show the login form and hide the signup form
+          function showLoginForm() {
+            signupForm.classList.add("hide");
+            loginForm.classList.remove("hide");
+          }
+
+          function showSignupForm() {
+            signupForm.classList.remove("hide");
+            loginForm.classList.add("hide");
+          }
+
+          function showBalance(balance) {
+            balanceInfo.textContent = `Your balance is $${balance}`;
+            loginForm.classList.add("hide");
+            balanceSection.classList.remove("hide");
+          }
+
+          toggleLogin.addEventListener("click", showLoginForm);
+          toggleSignup.addEventListener("click", showSignupForm);
+          signupForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const balance = 1000;
+            showBalance(balance);
+          });
+
+          loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const balance = 1500;
+            showBalance(balance);
+          });
+
+          logoutButton.addEventListener("click", function () {
+            balanceSection.classList.add("hide");
+            loginForm.reset();
+            showLoginForm();
+          });
+        });
+        // script 2
+      </script>
+    </div>
+  </body>
+</html>

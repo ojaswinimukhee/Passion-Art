@@ -1,0 +1,165 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:wght@500&family=Playfair+Display:ital,wght@0,700;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.main {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+}
+
+body{
+    position: absolute;
+    overflow: scroll;
+} 
+
+.heading p{
+    font-family: Playfair Display;
+    font-size:89px;
+    color: midnightblue;
+}
+
+#catt {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Abril Fatface ;
+}
+
+.heading img {
+    size: 50px;
+}
+
+
+.blocks img {
+    position: absolute;
+    height: 300px;
+    width:300px;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.blocks p {
+    position: absolute;
+    font-size: xx-large;
+}
+
+/*Acrylic paint*/
+
+.acrylic img{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+ 
+.acrylic p {
+    margin-left: 150px;
+    margin-top: 350px;
+}
+
+/*pencil sketch*/
+
+.pencilsketch img{
+    margin-left: 550px;
+    margin-top: 30px;
+}
+
+
+.pencilsketch p {
+    margin-left: 620px;
+    margin-top: 350px;
+}
+
+/*color sketch*/
+
+.colorsketch img {
+    margin-left: 1000px;
+    margin-top: 30px;
+}
+
+.colorsketch p {
+    margin-left: 1060px;
+    margin-top: 350px;
+}
+
+/*face paint*/
+
+.facepaint img{
+    margin-left: 100px;
+    margin-top: 430px;
+}
+
+.facepaint p {
+    margin-left: 180px;
+    margin-top: 750px;
+}
+
+/*paper craft*/
+
+.papercraft img {
+    margin-left: 550px;
+    margin-top: 430px;
+}
+
+.papercraft p {
+    margin-left: 620px;
+    margin-top: 750px;
+}
+
+/*road paint*/
+
+.roadpaint img {
+    margin-left: 1000px;
+    margin-top: 430px;
+}
+
+.roadpaint p {
+    margin-left: 1060px;
+    margin-top: 750px;
+}
+
+/*journel*/
+
+.journel img{
+    margin-left: 100px;
+    margin-top: 830px;
+}
+
+.journel p {
+    margin-left: 180px;
+    margin-top: 1150px;
+}
+
+/*water color*/
+
+.watercolor img {
+    margin-left: 550px;
+    margin-top: 830px;
+}
+
+.watercolor p {
+    margin-left: 620px;
+    margin-top: 1150px;
+}
+
+/*tattoo*/
+
+.tattoo img {
+    margin-left: 1000px;
+    margin-top: 830px;
+}
+
+.tattoo p {
+    margin-left: 1060px;
+    margin-top: 1150px;
+}
